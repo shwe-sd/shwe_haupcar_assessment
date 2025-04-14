@@ -63,7 +63,7 @@ lib/
 
 ## APK
 
-You can find the release APK file in the `build/` directory for testing.
+[You can test the release APK file here](https://github.com/shwe-sd/shwe_haupcar_assessment/blob/main/shwe_haupcar_assessment.apk)
 
 ## Submission
 
