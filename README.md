@@ -13,7 +13,7 @@ This is a sample Flutter mobile application for the Haupcar coding assessment. T
 - RESTful API integration with [dummyjson](https://dummyjson.com/).
 
 ## Demo Video
-[Watch the demo video here](https://github.com/shwe-sd/shwe_haupcar_assessment/main/demo_video.mp4)
+[Watch the demo video here](https://github.com/shwe-sd/shwe_haupcar_assessment/demo_video.MP4)
 
 
 ## Getting Started
