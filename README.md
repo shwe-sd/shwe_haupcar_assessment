@@ -12,6 +12,10 @@ This is a sample Flutter mobile application for the Haupcar coding assessment. T
 - Responsive UI with Material Design.
 - RESTful API integration with [dummyjson](https://dummyjson.com/).
 
+## Demo Video
+[Watch the demo video here](https://github.com/shwe-sd/shwe_haupcar_assessment/main/demo_video.mp4)
+
+
 ## Getting Started
 
 1. Clone this repository
