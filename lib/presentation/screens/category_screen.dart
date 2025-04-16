@@ -7,7 +7,7 @@ import '../../../core/constants/language_constants.dart';
 import '../../../blocs/locale/locale_bloc.dart';
 import '../../../blocs/locale/locale_event.dart';
 import '../../widgets/sticky_header_delegate.dart';
-import 'product_list_screen.dart';
+import '../widgets/category_tile.dart';
 
 class CategoryScreen extends StatelessWidget {
   const CategoryScreen({super.key});
@@ -80,23 +80,7 @@ class CategoryScreen extends StatelessWidget {
                     delegate: SliverChildBuilderDelegate(
                           (context, index) {
                         final category = state.categories[index];
-                        return Column(
-                          children: [
-                            ListTile(
-                              title: Text(category.name),
-                              trailing: const Icon(Icons.arrow_forward_ios, size: 15,),
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (_) => ProductListScreen(category: category),
-                                  ),
-                                );
-                              },
-                            ),
-                            const Divider(height: 1),
-                          ],
-                        );
+                        return CategoryTile(category: category);
                       },
                       childCount: state.categories.length,
                     ),
