@@ -98,7 +98,7 @@ class ProductListScreen extends StatelessWidget {
                 ),
               );
             } else if (state is ProductError) {
-              return Center(child: Text('No item'));
+              return Center(child: Text(context.tr.noitem));
             } else {
               return const SizedBox();
             }

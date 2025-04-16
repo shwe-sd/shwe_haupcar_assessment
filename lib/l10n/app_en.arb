@@ -2,5 +2,6 @@
   "@@locale": "en",
   "home": "Home",
   "categories": "Categories",
-  "language": "Language"
+  "language": "Language",
+  "noitem": "No item found"
 }

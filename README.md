@@ -29,7 +29,12 @@ cd shwe_haupcar_assessment
 flutter pub get
 ```
 
-3. Run the app
+3. Install localization
+```bash
+flutter gen-l10n
+```
+
+4. Run the app
 ```bash
 flutter run
 ```
