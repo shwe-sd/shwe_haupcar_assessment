@@ -3,14 +3,18 @@
 
 This is a sample Flutter mobile application for the Haupcar coding assessment. The project demonstrates the ability to build a functional app using Flutter, BLoC, RESTful API, and localization support.
 
+This project follows the BLoC (Business Logic Component) pattern and Clean Architecture principle.
+
 ## Features
 
 - Home page: Display a list of product categories.
 - Product page: Show products under a selected category.
-- Localization support (English, Thai, Myanmar) using Drawer menu.
+- Localization support (English, Thai, Myanmar) using Drawer menu (stored using shared_preferences).
 - BLoC pattern used for state management.
 - Responsive UI with Material Design.
 - RESTful API integration with [dummyjson](https://dummyjson.com/).
+- Pull-to-Refresh on category/product listings for real-time updates.
+- Cached Images using cached_network_image to minimize repeated network calls and enhance performance.
 
 ## Demo Video
 [Watch the demo video here](https://github.com/shwe-sd/shwe_haupcar_assessment/demo_video.MP4)
@@ -47,7 +51,16 @@ flutter run
 ## Language Support
 
 - Change language from Drawer menu
-- App supports English and Thai for UI labels (not API data)
+- App supports English, Thai and Myanmar for UI labels (not API data)
+
+## Packages Used
+
+- `flutter_bloc` – state management
+- `shared_preferences` – store locale settings
+- `cached_network_image` – optimized image caching
+- `flutter_gen/gen_l10n` – localization generation
+- `http` – API handling
+- `equatable` – clean state comparison in BLoC
 
 ## Folder Structure
 
@@ -55,8 +68,9 @@ flutter run
 lib/
 ├── blocs/             # BLoC for categories, products, and locale
 ├── core/              # Themes and constants
-├── presentation/      # UI Screens
-├── widgets/           # Custom drawer, widgets
+├── l10n/              # Languages & Localization
+├── models/            # Models
+├── presentation/      # UI Screens & widgets
 ├── main.dart          # Entry point
 ```
 
